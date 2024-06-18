@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mortgage Calculator</title>
+        <link rel="stylesheet" href="project2.css">
+
+    </head>
+    <body>
+        <div class="content">
+             <div class="header">
+            <h1>Calculate Your Home Loan Quickly!</h1></div>
+        <div class="left">
+            <h2>What is a mortgage calculator?</h2>
+                <p> A mortgage calculator is a tool that helps you 
+                    estimate the monthly payment, interest ratem 
+                    and other costs associated with a mortgage. You
+                    can use a mortgage calculator to see how much you
+                    could borrow, how much interest you would pay, 
+                    and how long it would take you to repay the loan. 
+                </p></div>
+        <div class="right">
+            <img src="calculator.jpg"></div>
+        <div class="middle">
+            <h2>How to?</h2>
+            <p>Enter the principal and yearly rate as a percentage
+            and select the motgage loan term from 10 years, 15 years, 
+            or 30 years.</p>
+
+            <form action="javascript:void(0)"
+            onsubmit="calculate()">
+            <p>
+            <label for="term">Term in years:  </label>
+            <select id="term" name="term">
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+            </select>
+            </p>
+
+            <p>
+             <label for="principal">principal:    </label><input id="principal"
+             name="principal" type="number" min="1" required>   
+            </p>
+
+            <p>
+            <label for="yearly_rate">yearly rate:   </label><input id="yearly_rate"
+            name="yearly rate" type="number" min="0" required step="any">
+            </p>
+
+            <p>
+                Monthly Payment: <span class="monthly_payment"></span>
+               </p>
+            
+            <p><input type="submit" value="Calculate!"></p>
+            </form>
+            
+            <script src="project2.js"></script>
+
+        </div>
+        <div class="footer">2026 June 16th This will be my GitHib Information</div>
+        
+    
+        </div>
+
+
+    </body>
+</html>
